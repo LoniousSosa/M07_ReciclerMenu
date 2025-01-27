@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@drawable/wood2"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:backgroundTint="@color/beige"
+        android:layout_height="122dp"
+        android:layout_width="match_parent"
+        >
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:elevation="10dp"
+        android:id="@+id/default_profile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/default_profile"
+        />
+
+    <ImageView
+        android:elevation="11dp"
+        android:id="@+id/plus_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/plus_icon"
+        android:translationZ="19dp" />
+
+    <LinearLayout
+        android:id="@+id/profileVertical"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/plus_icon"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            style="@style/InputEditText"
+            android:layout_marginVertical="6dp"
+            android:id="@+id/username_lower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_lower"
+            android:textColorHint="@color/white"
+            />
+
+        <EditText
+            style="@style/InputEditText"
+            android:layout_marginVertical="6dp"
+            android:id="@+id/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/country"
+            android:textColorHint="@color/white"
+            />
+
+
+
+        <EditText
+            style="@style/InputEditText"
+            android:layout_marginVertical="6dp"
+            android:id="@+id/estatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/estatus"
+            android:textColorHint="@color/white"
+            />
+
+
+
+        <EditText
+            android:layout_marginVertical="6dp"
+            style="@style/InputEditText"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textColorHint="@color/white"
+            />
+
+
+        <EditText
+            android:layout_marginVertical="6dp"
+            style="@style/InputEditText"
+            android:id="@+id/surnames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/surnames"
+            android:textColorHint="@color/white"
+            />
+
+
+
+        <EditText
+            style="@style/InputEditText"
+            android:layout_marginVertical="6dp"
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/language"
+            android:textColorHint="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/profileIcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/profileVertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="42dp"
+        >
+
+        <ImageView
+            android:id="@+id/inventoryIcon"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:src="@drawable/inventory"
+            />
+
+        <ImageView
+            android:id="@+id/historyIcon"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:src="@drawable/history"
+            android:layout_marginHorizontal="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/friendsIcon"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:src="@drawable/friends"
+            android:layout_marginRight="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/statsIcon"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:src="@drawable/stats"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/profileIcons"
+        android:layout_marginLeft="42dp"
+        >
+
+
+        <TextView
+            android:id="@+id/inventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/invetory"
+            android:fontFamily="@font/archivo_regular"
+            android:textSize="18dp"
+            android:paddingRight="13dp"
+            />
+
+        <TextView
+            android:id="@+id/history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:fontFamily="@font/archivo_regular"
+            android:textSize="18dp"
+            android:paddingRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends"
+            android:fontFamily="@font/archivo_regular"
+            android:textSize="18dp"
+            android:paddingRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stats"
+            android:fontFamily="@font/archivo_regular"
+            android:textSize="18dp"
+            android:paddingLeft="15dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableroActivity">
+
+    <LinearLayout
+        android:id="@+id/rivalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/green"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/rivalImage"
+            android:src="@drawable/default_profile"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="35dp"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="30dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rivalUsername"
+                android:text="@string/username_lower"
+                android:textColor="@color/orange"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rivalRank"
+                android:text="@string/rank"
+                android:textColor="@color/orange"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/rivalAdd"
+            android:src="@drawable/cruz_naranja"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="35dp"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableroProvisional"
+        android:src="@drawable/tablero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rivalInfo"
+        app:layout_constraintBottom_toTopOf="@id/matchOptions"
+        />
+
+    <LinearLayout
+        android:id="@+id/matchOptions"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/green"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/reportPlayer"
+                android:src="@drawable/report_player"
+                android:layout_marginStart="20dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/backArrow"
+                android:src="@drawable/back_arrow"
+                android:layout_marginStart="20dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/forwardArrow"
+                android:src="@drawable/forward_arrow"
+                android:layout_marginStart="20dp"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/forfeit_flag"
+                android:src="@drawable/white_flag"
+                android:layout_marginStart="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reportMessage"
+                android:text="@string/report"
+                android:layout_marginStart="28dp"
+                android:textColor="@color/orange"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/backMessage"
+                android:text="@string/backwards"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/orange"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forwardMessage"
+                android:text="@string/forward"
+                android:layout_marginStart="44dp"
+                android:textColor="@color/orange"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/forfeitMessage"
+                android:text="@string/forfeit"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/orange"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
